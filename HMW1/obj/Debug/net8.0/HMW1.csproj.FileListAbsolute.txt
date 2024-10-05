@@ -1,0 +1,14 @@
+/Users/lorenzo/Desktop/University/Statistics/HMW1/obj/Debug/net8.0/HMW1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lorenzo/Desktop/University/Statistics/HMW1/obj/Debug/net8.0/HMW1.AssemblyInfoInputs.cache
+/Users/lorenzo/Desktop/University/Statistics/HMW1/obj/Debug/net8.0/HMW1.AssemblyInfo.cs
+/Users/lorenzo/Desktop/University/Statistics/HMW1/obj/Debug/net8.0/HMW1.csproj.CoreCompileInputs.cache
+/Users/lorenzo/Desktop/University/Statistics/HMW1/bin/Debug/net8.0/HMW1
+/Users/lorenzo/Desktop/University/Statistics/HMW1/bin/Debug/net8.0/HMW1.deps.json
+/Users/lorenzo/Desktop/University/Statistics/HMW1/bin/Debug/net8.0/HMW1.runtimeconfig.json
+/Users/lorenzo/Desktop/University/Statistics/HMW1/bin/Debug/net8.0/HMW1.dll
+/Users/lorenzo/Desktop/University/Statistics/HMW1/bin/Debug/net8.0/HMW1.pdb
+/Users/lorenzo/Desktop/University/Statistics/HMW1/obj/Debug/net8.0/HMW1.dll
+/Users/lorenzo/Desktop/University/Statistics/HMW1/obj/Debug/net8.0/refint/HMW1.dll
+/Users/lorenzo/Desktop/University/Statistics/HMW1/obj/Debug/net8.0/HMW1.pdb
+/Users/lorenzo/Desktop/University/Statistics/HMW1/obj/Debug/net8.0/HMW1.genruntimeconfig.cache
+/Users/lorenzo/Desktop/University/Statistics/HMW1/obj/Debug/net8.0/ref/HMW1.dll
