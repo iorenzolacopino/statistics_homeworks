@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uI1OdTkXoFk=",
+  "dgSpecHash": "1bKEs6IDMTg=",
   "success": true,
-  "projectFilePath": "/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW1/HMW1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\loren\\Desktop\\HMW1\\HMW1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\loren\\.nuget\\packages\\winforms.datavisualization\\1.9.2\\winforms.datavisualization.1.9.2.nupkg.sha512"
+  ],
   "logs": []
 }
