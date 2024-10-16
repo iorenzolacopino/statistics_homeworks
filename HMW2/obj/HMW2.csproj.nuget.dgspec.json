@@ -1,30 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW2/HMW2.csproj": {}
+    "C:\\Users\\loren\\Desktop\\HMW2\\HMW2.csproj": {}
   },
   "projects": {
-    "/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW2/HMW2.csproj": {
+    "C:\\Users\\loren\\Desktop\\HMW2\\HMW2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW2/HMW2.csproj",
+        "projectUniqueName": "C:\\Users\\loren\\Desktop\\HMW2\\HMW2.csproj",
         "projectName": "HMW2",
-        "projectPath": "/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW2/HMW2.csproj",
-        "packagesPath": "/Users/lorenzo/.nuget/packages/",
-        "outputPath": "/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW2/obj/",
+        "projectPath": "C:\\Users\\loren\\Desktop\\HMW2\\HMW2.csproj",
+        "packagesPath": "C:\\Users\\loren\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\loren\\Desktop\\HMW2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lorenzo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\loren\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net8.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
         },
@@ -40,8 +42,14 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "WinForms.DataVisualization": {
+              "target": "Package",
+              "version": "[1.9.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,9 +64,12 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
