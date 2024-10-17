@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             label1 = new Label();
             txtN = new TextBox();
             label2 = new Label();
@@ -49,20 +49,17 @@
             label4 = new Label();
             chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            panel1 = new Panel();
-            relfreq = new RadioButton();
-            absfreq = new RadioButton();
-            panel2 = new Panel();
-            distr = new Button();
-            Nsteps = new TextBox();
-            label5 = new Label();
             mean = new Label();
             variance = new Label();
+            label6 = new Label();
+            relmean = new Label();
+            relvar = new Label();
+            label5 = new Label();
+            label8 = new Label();
+            txtT = new TextBox();
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chart2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chart3).BeginInit();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -115,17 +112,17 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            chart1.Legends.Add(legend1);
+            chartArea4.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            chart1.Legends.Add(legend4);
             chart1.Location = new Point(12, 80);
             chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            chart1.Series.Add(series1);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            chart1.Series.Add(series4);
             chart1.Size = new Size(449, 412);
             chart1.TabIndex = 6;
             chart1.Text = "chart1";
@@ -148,6 +145,7 @@
             reset.TabIndex = 8;
             reset.Text = "Reset";
             reset.UseVisualStyleBackColor = true;
+            reset.Click += reset_Click;
             // 
             // label4
             // 
@@ -161,102 +159,36 @@
             // 
             // chart2
             // 
-            chartArea2.Name = "ChartArea1";
-            chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            chart2.Legends.Add(legend2);
+            chartArea5.Name = "ChartArea1";
+            chart2.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            chart2.Legends.Add(legend5);
             chart2.Location = new Point(467, 80);
             chart2.Name = "chart2";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            chart2.Series.Add(series2);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            chart2.Series.Add(series5);
             chart2.Size = new Size(449, 412);
             chart2.TabIndex = 10;
             chart2.Text = "chart2";
             // 
             // chart3
             // 
-            chartArea3.Name = "ChartArea1";
-            chart3.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            chart3.Legends.Add(legend3);
+            chartArea6.Name = "ChartArea1";
+            chart3.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            chart3.Legends.Add(legend6);
             chart3.Location = new Point(922, 80);
             chart3.Name = "chart3";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            chart3.Series.Add(series3);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            series6.YValuesPerPoint = 2;
+            chart3.Series.Add(series6);
             chart3.Size = new Size(449, 412);
             chart3.TabIndex = 11;
-            chart3.Text = "chart3";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(relfreq);
-            panel1.Controls.Add(absfreq);
-            panel1.Location = new Point(467, 51);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(375, 26);
-            panel1.TabIndex = 14;
-            // 
-            // relfreq
-            // 
-            relfreq.AutoSize = true;
-            relfreq.Location = new Point(164, 4);
-            relfreq.Name = "relfreq";
-            relfreq.Size = new Size(152, 24);
-            relfreq.TabIndex = 14;
-            relfreq.TabStop = true;
-            relfreq.Text = "Relative frequency";
-            relfreq.UseVisualStyleBackColor = true;
-            // 
-            // absfreq
-            // 
-            absfreq.AutoSize = true;
-            absfreq.Location = new Point(0, 4);
-            absfreq.Name = "absfreq";
-            absfreq.Size = new Size(158, 24);
-            absfreq.TabIndex = 13;
-            absfreq.TabStop = true;
-            absfreq.Text = "Absolute frequency";
-            absfreq.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(distr);
-            panel2.Controls.Add(Nsteps);
-            panel2.Controls.Add(label5);
-            panel2.Location = new Point(922, 45);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(449, 32);
-            panel2.TabIndex = 15;
-            // 
-            // distr
-            // 
-            distr.Location = new Point(325, 3);
-            distr.Name = "distr";
-            distr.Size = new Size(58, 27);
-            distr.TabIndex = 3;
-            distr.Text = "Graph";
-            distr.UseVisualStyleBackColor = true;
-            // 
-            // Nsteps
-            // 
-            Nsteps.Location = new Point(265, 3);
-            Nsteps.Name = "Nsteps";
-            Nsteps.Size = new Size(54, 27);
-            Nsteps.TabIndex = 2;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(0, 12);
-            label5.Name = "label5";
-            label5.Size = new Size(259, 20);
-            label5.TabIndex = 1;
-            label5.Text = "Final/Intermediate distribution (steps)";
+            chart3.Text = "chart4";
             // 
             // mean
             // 
@@ -270,21 +202,77 @@
             // variance
             // 
             variance.AutoSize = true;
-            variance.Location = new Point(913, 12);
+            variance.Location = new Point(922, 12);
             variance.Name = "variance";
             variance.Size = new Size(68, 20);
             variance.TabIndex = 17;
             variance.Text = "Variance:";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(467, 57);
+            label6.Name = "label6";
+            label6.Size = new Size(196, 20);
+            label6.TabIndex = 19;
+            label6.Text = "Absolute/Relative frequency";
+            // 
+            // relmean
+            // 
+            relmean.AutoSize = true;
+            relmean.Location = new Point(631, 32);
+            relmean.Name = "relmean";
+            relmean.Size = new Size(106, 20);
+            relmean.TabIndex = 21;
+            relmean.Text = "Relative mean:";
+            // 
+            // relvar
+            // 
+            relvar.AutoSize = true;
+            relvar.Location = new Point(922, 32);
+            relvar.Name = "relvar";
+            relvar.Size = new Size(124, 20);
+            relvar.TabIndex = 22;
+            relvar.Text = "Relative variance:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(922, 57);
+            label5.Name = "label5";
+            label5.Size = new Size(87, 20);
+            label5.TabIndex = 23;
+            label5.Text = "Distribution";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(296, 45);
+            label8.Name = "label8";
+            label8.Size = new Size(42, 20);
+            label8.TabIndex = 24;
+            label8.Text = "Time";
+            // 
+            // txtT
+            // 
+            txtT.Location = new Point(344, 42);
+            txtT.Name = "txtT";
+            txtT.Size = new Size(54, 27);
+            txtT.TabIndex = 25;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1386, 504);
+            ClientSize = new Size(1382, 503);
+            Controls.Add(txtT);
+            Controls.Add(label8);
+            Controls.Add(label5);
+            Controls.Add(relvar);
+            Controls.Add(relmean);
+            Controls.Add(label6);
             Controls.Add(variance);
             Controls.Add(mean);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
             Controls.Add(chart3);
             Controls.Add(chart2);
             Controls.Add(label4);
@@ -302,10 +290,6 @@
             ((System.ComponentModel.ISupportInitialize)chart1).EndInit();
             ((System.ComponentModel.ISupportInitialize)chart2).EndInit();
             ((System.ComponentModel.ISupportInitialize)chart3).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -323,15 +307,14 @@
         private Button reset;
         private Label label4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
-        private Panel panel1;
-        private RadioButton relfreq;
-        private RadioButton absfreq;
-        private Panel panel2;
-        private TextBox Nsteps;
-        private Label label5;
-        private Button distr;
         private Label mean;
         private Label variance;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        private Label label6;
+        private Label relmean;
+        private Label relvar;
+        private Label label5;
+        private Label label8;
+        private TextBox txtT;
     }
 }
