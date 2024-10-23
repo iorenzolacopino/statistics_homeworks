@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "pamUcooiW8U=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\loren\\Desktop\\HMW3\\HMW3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\loren\\.nuget\\packages\\winforms.datavisualization\\1.9.2\\winforms.datavisualization.1.9.2.nupkg.sha512"
+  ],
+  "logs": []
+}
