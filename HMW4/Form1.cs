@@ -1,4 +1,3 @@
-using System;
 using System.Windows.Forms.DataVisualization.Charting;
 
 namespace HMW4
@@ -16,7 +15,7 @@ namespace HMW4
 
         private bool penetrates(double p)
         {
-            return new Random().Next(0, 100) < (p * 100)? true : false;
+            return new Random().Next(0, 100) < (p * 100) ? true : false;
         }
 
         private void graph_Click(object sender, EventArgs e)
@@ -35,15 +34,17 @@ namespace HMW4
             chart1.ChartAreas[0].AxisX.Minimum = 0;
             chart1.ChartAreas[0].AxisX.Maximum = this.t;
             chart1.ChartAreas[0].AxisX.Interval = this.t / this.n;
-            chart1.ChartAreas[0].AxisY.Minimum = this.n - (2 * this.n);
-            chart1.ChartAreas[0].AxisY.Maximum = this.n;
+            chart1.ChartAreas[0].AxisY.Minimum = -2;
+            chart1.ChartAreas[0].AxisY.Maximum = 2;
             chart1.ChartAreas[0].AxisX.Title = "Time";
             chart1.ChartAreas[0].AxisY.Title = "Wiener process";
-            series.Points.AddXY(0, y);
-            for (int i = 0; i < this.t; i++){
-                if (penetrates(this.lambda, this.n)) y += (float)1 / (float)this.n;
-                else y += (float)1 / (float)this.n;
-                series.Points.AddXY((this.t / this.n) * i, y);
+            // series.Points.AddXY(0, y);
+            for (int i = 0; i < this.n + 1; i++)
+            {
+                if (i != 0) series.Points.AddXY((this.t / this.n) * i, y);
+                if (penetrates(this.p)) y += (float)1 / (float)this.n;
+                else y -= (float)1 / (float)this.n;
+                if (i < this.n) series.Points.AddXY((this.t / this.n) * i, y);
             }
             chart1.Series.Add(series);
         }
