@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDE Simulator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        canvas {
+            margin-top: 20px;
+        }
+        .controls {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Stochastic Differential Equation (SDE) Simulator</h2>
+
+    <div class="controls">
+        <label for="sdeType">Select SDE Type:</label>
+        <select id="sdeType">
+            <option value="random_walk">Random Walk</option>
+            <option value="continuous_attacks">Continuous Attack Model</option>
+            <option value="scaling_limit">Scaling Limit (Wiener Process)</option>
+        </select>
+
+        <label for="probability">Probability (p):</label>
+        <input type="number" id="probability" value="0.5" step="0.01" min="0" max="1">
+
+        <button onclick="runSimulation()">Run Simulation</button>
+    </div>
+
+    <canvas id="chart" width="600" height="400"></canvas>
+
+    <script>
+        class SDESimulator {
+            constructor(params) {
+                this.n = params.n || 1000;  // number of steps
+                this.dt = params.dt || 0.01; // time step
+                this.p = params.p || 0.5;    // probability for jumps
+                this.lambda = params.lambda || 5; // rate for continuous attack model
+                this.type = params.type || "random_walk"; // SDE Type
+                this.trajectory = [];
+            }
+
+            simulate() {
+                this.trajectory = [0]; // start at 0
+
+                for (let i = 1; i < this.n; i++) {
+                    let lastValue = this.trajectory[i - 1];
+
+                    if (this.type === "random_walk") {
+                        this.trajectory.push(lastValue + (Math.random() < this.p ? 1 : -1));
+                    }
+                    else if (this.type === "continuous_attacks") {
+                        if (Math.random() < this.lambda * this.dt) {
+                            this.trajectory.push(lastValue + 1);
+                        } else {
+                            this.trajectory.push(lastValue);
+                        }
+                    }
+                    else if (this.type === "scaling_limit") {
+                        let jump = Math.random() < this.p ? Math.sqrt(this.dt) : -Math.sqrt(this.dt);
+                        this.trajectory.push(lastValue + jump);
+                    }
+                }
+            }
+
+            getTrajectory() {
+                return this.trajectory;
+            }
+        }
+
+        function plotSimulation(data) {
+            let ctx = document.getElementById("chart").getContext("2d");
+            
+            // destroy existing chart instance if it exists
+            if (window.myChart instanceof Chart) {
+                window.myChart.destroy();
+            }
+
+            window.myChart = new Chart(ctx, {
+                type: "line",
+                data: {
+                    labels: data.map((_, i) => i),
+                    datasets: [{
+                        label: "SDE Trajectory",
+                        data: data,
+                        borderColor: "blue",
+                        fill: false
+                    }]
+                }
+            });
+        }
+
+        function runSimulation() {
+            let sdeType = document.getElementById("sdeType").value;
+            let probability = parseFloat(document.getElementById("probability").value);
+            
+            if (isNaN(probability) || probability < 0 || probability > 1) {
+                alert("Please enter a valid probability between 0 and 1.");
+                return;
+            }
+
+            let simulator = new SDESimulator({ n: 1000, dt: 0.01, p: probability, lambda: 5, type: sdeType });
+            simulator.simulate();
+            plotSimulation(simulator.getTrajectory());
+        }
+    </script>
+
+</body>
+</html>
+

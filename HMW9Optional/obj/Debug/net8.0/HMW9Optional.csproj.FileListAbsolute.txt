@@ -1,0 +1,15 @@
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/obj/Debug/net8.0/HMW9Optional.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/obj/Debug/net8.0/HMW9Optional.AssemblyInfoInputs.cache
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/obj/Debug/net8.0/HMW9Optional.AssemblyInfo.cs
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/obj/Debug/net8.0/HMW9Optional.csproj.CoreCompileInputs.cache
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/obj/Debug/net8.0/HMW9Optional.sourcelink.json
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/bin/Debug/net8.0/HMW9Optional
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/bin/Debug/net8.0/HMW9Optional.deps.json
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/bin/Debug/net8.0/HMW9Optional.runtimeconfig.json
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/bin/Debug/net8.0/HMW9Optional.dll
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/bin/Debug/net8.0/HMW9Optional.pdb
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/obj/Debug/net8.0/HMW9Optional.dll
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/obj/Debug/net8.0/refint/HMW9Optional.dll
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/obj/Debug/net8.0/HMW9Optional.pdb
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/obj/Debug/net8.0/HMW9Optional.genruntimeconfig.cache
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW9Optional/obj/Debug/net8.0/ref/HMW9Optional.dll

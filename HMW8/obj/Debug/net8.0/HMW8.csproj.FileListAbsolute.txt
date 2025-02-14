@@ -1,0 +1,15 @@
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/obj/Debug/net8.0/HMW8.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/obj/Debug/net8.0/HMW8.AssemblyInfoInputs.cache
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/obj/Debug/net8.0/HMW8.AssemblyInfo.cs
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/obj/Debug/net8.0/HMW8.csproj.CoreCompileInputs.cache
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/obj/Debug/net8.0/HMW8.sourcelink.json
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/bin/Debug/net8.0/HMW8
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/bin/Debug/net8.0/HMW8.deps.json
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/bin/Debug/net8.0/HMW8.runtimeconfig.json
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/bin/Debug/net8.0/HMW8.dll
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/bin/Debug/net8.0/HMW8.pdb
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/obj/Debug/net8.0/HMW8.dll
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/obj/Debug/net8.0/refint/HMW8.dll
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/obj/Debug/net8.0/HMW8.pdb
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/obj/Debug/net8.0/HMW8.genruntimeconfig.cache
+/Users/lorenzo/Desktop/University/Statistics/Statistics Homeworks/HMW8/obj/Debug/net8.0/ref/HMW8.dll
